@@ -48,8 +48,8 @@ export default function Details() {
   return (
     <>
       {isLoading && <div className="loader d-flex justify-content-center align-items-center vh-100"><Loader/> </div>} {/* Show loader if isLoading is true */}
-      <div className='container'>
-        <div className='row align-items-center'>
+      <div className='container mb-5'>
+        <div className='row align-items-center gy-3'>
           <div className='col-md-4'>
             <Slider {...settings}>
               {data?.data?.data?.images.map((ele, index) => <img key={index} src={ele} className='w-100' alt="" />)}
