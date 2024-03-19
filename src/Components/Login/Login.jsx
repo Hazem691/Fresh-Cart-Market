@@ -55,13 +55,13 @@ export default function Login() {
   return (
     <>
       <Helmet><title>Login</title></Helmet>
-      <div className='w-50 mx-auto my-5 p-4'>
+      <div className=' container mx-auto my-5 p-4'>
         <h2 className='mb-3'>Login Now :</h2>
         <form onSubmit={registerForm.handleSubmit} >
        
           <div className='form-group '>
             <label htmlFor="Email">Email</label>
-            <input type="text" id='Email' name='email' className=' form-control' value={registerForm.values.email} onChange={registerForm.handleChange} onBlur={registerForm.handleBlur} />
+            <input type="text" id='Email' name='email' className=' form-control ' value={registerForm.values.email} onChange={registerForm.handleChange} onBlur={registerForm.handleBlur} />
             {registerForm.errors.email && registerForm.touched.email ? <div className='alert alert-danger  text-danger'>{registerForm.errors.email}</div> : null}
           </div>
           <div className='form-group '>

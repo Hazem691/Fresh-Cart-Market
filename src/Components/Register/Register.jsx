@@ -57,7 +57,7 @@ export default function Register() {
   return (
     <>
     <Helmet><title>Register</title></Helmet>
-      <div className='w-50 mx-auto my-5 p-4'>
+      <div className='container mx-auto my-5 p-4'>
         <h2 className='mb-3'>Register Now :</h2>
         {errorMssg? <div className='alert alert-danger '>{errorMssg}</div>:null}
         <form onSubmit={registerForm.handleSubmit} >
