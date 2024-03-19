@@ -36,7 +36,7 @@ function App() {
     },[]) ;
    // 
   const routes =  createHashRouter([
-            {path : "/Fresh-Cart-Market/",element : <LayOut/> , children :[
+            {path : "",element : <LayOut/> , children :[
             {path : "home",element:<ProtectedRoutes><Home/></ProtectedRoutes>},
             {path : "products",element:<ProtectedRoutes><Products/></ProtectedRoutes>},
             {path : "categories",element:<ProtectedRoutes><Categories/></ProtectedRoutes>},
