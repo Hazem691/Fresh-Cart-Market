@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
-import {RouterProvider, createBrowserRouter} from 'react-router-dom'
+import {RouterProvider, createBrowserRouter, createHashRouter} from 'react-router-dom'
 import LayOut from './Components/LayOut/LayOut';
 import Home from './Components/Home/Home'
 import Categories from './Components/Categories/Categories'
@@ -35,7 +35,7 @@ function App() {
         }
     },[]) ;
    // 
-  const routes =  createBrowserRouter([
+  const routes =  createHashRouter([
             {path : "/Fresh-Cart-Market/",element : <LayOut/> , children :[
             {path : "home",element:<ProtectedRoutes><Home/></ProtectedRoutes>},
             {path : "products",element:<ProtectedRoutes><Products/></ProtectedRoutes>},

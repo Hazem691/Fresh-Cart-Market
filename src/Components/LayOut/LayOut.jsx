@@ -10,7 +10,7 @@ export default function LayOut() {
     <>
     <NavBar/>
       
-     <Outlet><Register/></Outlet>
+     <Outlet></Outlet>
     <Toaster/>
      
      <Footer/>
