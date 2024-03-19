@@ -8,8 +8,9 @@ export default function CategoriesSlider() {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 8,
-    slidesToScroll: 1
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true
   };
 
   async function getCategories() {
