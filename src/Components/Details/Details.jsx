@@ -22,7 +22,7 @@ export default function Details() {
   };
 
   async function getDetailedPage(id) {
-    return axios.get(`https://route-ecommerce.onrender.com/api/v1/products/${id}`);
+    return axios.get(`https://ecommerce.routemisr.com/api/v1/products/${id}`);
   }
 
   const { data } = useQuery("DetailsPage", () => getDetailedPage(id));

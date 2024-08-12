@@ -16,7 +16,7 @@ export default function Register() {
      setError("") ;
      setloading(true) ;
     
-      let {data} = await axios.post("https://route-ecommerce.onrender.com/api/v1/auth/signup", reqBody).catch((err)=>setError(err.response.data.message))
+      let {data} = await axios.post("https://ecommerce.routemisr.com/api/v1/auth/signup", reqBody).catch((err)=>setError(err.response.data.message))
       console.log("this is our data ", data);
       if(data.message === "success"){
         localStorage.setItem("usertoken",data.token) ;

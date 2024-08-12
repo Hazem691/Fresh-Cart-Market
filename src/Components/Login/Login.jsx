@@ -16,7 +16,7 @@ export default function Login() {
 
   async function callRegister(reqBody) {
     try {
-      let { data } = await axios.post("https://route-ecommerce.onrender.com/api/v1/auth/signin", reqBody);
+      let { data } = await axios.post("https://ecommerce.routemisr.com/api/v1/auth/signin", reqBody);
       console.log("this is our data ", data);
       if (data.message === "success") {
         navigation('/home');

@@ -9,7 +9,7 @@ let headers = {
 }
 
 function addToWishList(id){
-    return axios.post(`https://route-ecommerce.onrender.com/api/v1/wishlist`,{
+    return axios.post(`https://ecommerce.routemisr.com/api/v1/wishlist`,{
         productId : id
     },{
         headers,
@@ -19,7 +19,7 @@ function addToWishList(id){
 
 
 function getWishList(id){
-    return axios.get(`https://route-ecommerce.onrender.com/api/v1/wishlist`,{
+    return axios.get(`https://ecommerce.routemisr.com/api/v1/wishlist`,{
         headers,
     }
     ).then((res)=>res).catch((err)=>err)
@@ -35,7 +35,7 @@ export default function WishContextProvider(props){
       }
       async function deleteWish(id) {
         try {
-          await axios.delete(`https://route-ecommerce.onrender.com/api/v1/wishlist/${id}`, {
+          await axios.delete(`https://ecommerce.routemisr.com/api/v1/wishlist/${id}`, {
             headers,
           });
           // Remove the deleted product ID from the redIcon state

@@ -49,7 +49,7 @@ export default function FeaturedProducts() {
   }
 
   function getAllProducts(){
-    return axios.get('https://route-ecommerce.onrender.com/api/v1/products');
+    return axios.get('https://ecommerce.routemisr.com/api/v1/products');
   }
 
   const { isLoading, data } = useQuery("featuredProducts", getAllProducts);

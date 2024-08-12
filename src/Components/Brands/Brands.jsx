@@ -28,7 +28,7 @@ export default function Brands() {
   const handleCardClick = async (id) => {
     try {
       setLoading(true);
-      const { data } = await axios.get(`https://route-ecommerce.onrender.com/api/v1/brands/${id}`);
+      const { data } = await axios.get(`https://ecommerce.routemisr.com/api/v1/brands/${id}`);
       setLoading(false);
       showBrandDetails(data.data);
     } catch (err) {

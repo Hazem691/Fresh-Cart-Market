@@ -9,7 +9,7 @@ let headers = {
 }
 
 function addToCart(id){
-    return axios.post(`https://route-ecommerce.onrender.com/api/v1/cart`,{
+    return axios.post(`https://ecommerce.routemisr.com/api/v1/cart`,{
         productId : id},
         {
         headers,
@@ -20,13 +20,13 @@ function addToCart(id){
 
 
 function getCart(){
-    return axios.get(`https://route-ecommerce.onrender.com/api/v1/cart`,{
+    return axios.get(`https://ecommerce.routemisr.com/api/v1/cart`,{
         headers , 
     }).then((res)=>res).catch((err)=>err) ;
 }
 
 function removeCartItem(id){
-    return axios.delete(`https://route-ecommerce.onrender.com/api/v1/cart/${id}`,{
+    return axios.delete(`https://ecommerce.routemisr.com/api/v1/cart/${id}`,{
         headers , 
     }).then((res)=>res).catch((err)=>err) ;
 }
@@ -36,7 +36,7 @@ function removeCartItem(id){
 function updateCartItem(id, count) {
     
     return axios.put(
-        `https://route-ecommerce.onrender.com/api/v1/cart/${id}`,
+        `https://ecommerce.routemisr.com/api/v1/cart/${id}`,
         { count },
         {
             headers,
@@ -55,7 +55,7 @@ export default function CartContextProvider(props) {
         setCartId(data?.data?._id)
     }
     function onlinePayment(shippingAddress){
-        return axios.post(`https://route-ecommerce.onrender.com/api/v1/orders/checkout-session/${cartId}?url=http://localhost:3000`,
+        return axios.post(`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartId}?url=http://localhost:3001`,
         {
             shippingAddress,
         },

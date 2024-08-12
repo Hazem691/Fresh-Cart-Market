@@ -45,7 +45,7 @@ function App() {
             {path: "details/:id",element:<ProtectedRoutes><Details/></ProtectedRoutes>},
             {path : "wishlist",element:<ProtectedRoutes><WishList/></ProtectedRoutes>},
             {path : "checkout" ,element : <ProtectedRoutes><CheckOut/></ProtectedRoutes>},
-            {path : "allorders" ,element: <ProtectedRoutes><AllOrders/></ProtectedRoutes>},
+            {path : "/allorders" ,element: <ProtectedRoutes><AllOrders/></ProtectedRoutes>},
             {path : "register",element: <Register/>},
             {path : "login" ,element : <Login/>},
             {path : "codeverify",element:<CodeVerify/>} ,

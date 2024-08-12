@@ -26,7 +26,7 @@ export default function Categories() {
   async function getDescriptionCategories(id) {
     try {
       setLoadingCategories(true);
-      const { data } = await axios.get(`https://route-ecommerce.onrender.com/api/v1/categories/${id}/subcategories`);
+      const { data } = await axios.get(`https://ecommerce.routemisr.com/api/v1/categories/${id}/subcategories`);
       setDescription(data.data);
       setLoadingCategories(false);
     } catch (error) {
@@ -36,7 +36,7 @@ export default function Categories() {
   }
   async function getCategoriesDetails(id){
     try{
-      const{data} = await axios.get(`https://route-ecommerce.onrender.com/api/v1/categories/${id}`);
+      const{data} = await axios.get(`https://ecommerce.routemisr.com/api/v1/categories/${id}`);
       setDetails(data.data);
 
     }catch (error) {
