@@ -14,7 +14,7 @@ export default function Categories() {
 
   async function getAllCategories() {
     try {
-      const { data } = await axios.get(`https://route-ecommerce.onrender.com/api/v1/categories`);
+      const { data } = await axios.get(`https://ecommerce.routemisr.com/api/v1//categories`);
       setAllCategories(data.data);
       setLoadingCategories(false);
     } catch (error) {
